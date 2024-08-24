@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectGame</title>
+</head>
+<body>
+    <p id="p"></p>
+    <div>
+<button 
+onclick=" Bat()"
+
+>Bat</button>
+<button>Ball</button>
+<button>Stump</button>
+</div>
+    <script>
+let num=Math.random()*3;
+
+function Bat()
+{
+    if(num<=1)
+{
+    document.querySelector('#p').innerHTML='computer has won';
+}
+else if(num>1 && num<=2)
+{
+    document.querySelector('#p').innerHTML='user has won';
+}   
+else{
+    document.querySelector('#p').innerHTML='stump has won';
+}
+}
+
+    </script>
+</body>
+</html>

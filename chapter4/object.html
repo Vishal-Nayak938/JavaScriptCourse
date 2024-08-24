@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <div id="div">hi this is vishal nayak</div>
+    <script>
+
+let product={
+book_name: "Math",
+book_size: 'A4',
+book_prize: 50,
+pen:{
+    pen_color:"Blue",
+    pen_prize:10,
+},
+display:function()
+{
+    console.log("hi hello");
+}
+};
+let {book_name, book_size,book_prize}=product;// destructring of an object
+
+console.log(book_name, book_size,book_prize);
+
+
+
+// console.log(product["book_name"]);
+// console.log(product.book_prize);
+// console.log(product.pen.pen_prize);
+    </script>
+</body>
+</html>

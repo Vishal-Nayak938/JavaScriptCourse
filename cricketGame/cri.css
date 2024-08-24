@@ -1,0 +1,44 @@
+.button{
+    color:red;
+    margin: 20px;
+    position: relative;
+    left:450px;
+    font-weight: 600;
+    width: 80px;
+}
+#H{
+    text-transform: uppercase;
+    color:blue; text-align: center;
+}
+img{
+    
+    height: 60px;
+}
+#foot{
+    height: 80px;
+    background-color: brown;
+    position:relative;
+    top: 270px;
+}
+span{
+text-align: center;
+color:white;
+margin:0px;
+position: relative; left:500px; top:10px;
+}
+
+
+#copyRight{
+    color:greenyellow;
+    position:absolute;
+    top:40px;
+    left:100px;
+
+}
+
+
+
+
+
+
+

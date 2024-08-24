@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <div id="Book"></div>
+    <script>
+let manufacturer="Krishna";
+let product={
+    book:"Physics",
+    "book-Cost": 50,
+    pageSize:"A4",
+    pageInBook:400,
+    manufacturer,
+  ratings:{
+ bookRating:4.5,
+ sales:45,
+ network:"all over india",
+  },
+
+  sum:function()
+  {
+console.log("This is a function");
+  }
+};
+console.log(product["book-Cost"])
+console.log(product)
+console.log(product)
+
+document.querySelector('#Book').innerHTML=product.book;
+    </script>
+</body>
+</html>

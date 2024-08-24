@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddEven</title>
+</head>
+<body>
+    <div id="E"></div>
+    <button onclick="a++; oddEven()">click</button>
+    <script>
+let a=9;
+function oddEven()
+{
+if(a%2==0)
+{
+document.querySelector('#E').innerText=`${a} Is Even.`;
+}
+else{
+    document.querySelector('#E').innerText=`${a} Is Odd.`;
+
+}
+}
+// oddEven();
+
+    </script>
+</body>
+</html>

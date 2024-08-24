@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>falsy</title>
+</head>
+<body>
+    <script>
+let a=7;
+let b=2;
+console.log(typeof(b));
+let i=0;
+function falsy()
+{
+    while(i<9)//!false(infinite loop)
+    // NaN,false,0,undefined,""(these are falsy values)
+{
+    console.log(i);
+    i++;
+}
+}
+
+falsy()
+
+
+    </script>
+</body>
+</html>

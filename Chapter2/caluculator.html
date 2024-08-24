@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="text" readonly>
+<button class="button" id="" onclick="currentValue+='+'; document.querySelector('#text').value=currentValue;">+</button>
+
+<button class="button" 
+onclick="currentValue+='1'; document.querySelector('#text').value=currentValue;">1</button>
+
+<button class="button" id=""
+onclick="currentValue+='2'; document.querySelector('#text').value=currentValue;"
+>2</button>
+<button class="button" id=""
+onclick="currentValue+='3'; document.querySelector('#text').value=currentValue;"
+>3</button>
+<button class="button" id=""
+onclick="currentValue+='-'; document.querySelector('#text').value=currentValue;"
+>-</button>
+<button class="button" id=""onclick="currentValue+='4'; document.querySelector('#text').value=currentValue;">4</button>
+<button class="button" id="" onclick="currentValue+='5'; document.querySelector('#text').value=currentValue;">5</button>
+<button class="button" id="" onclick="currentValue+='6'; document.querySelector('#text').value=currentValue;">6</button>
+<button class="button" id="" onclick="currentValue+='*'; document.querySelector('#text').value=currentValue;">*</button>
+<button class="button" id="" onclick="currentValue+='7'; document.querySelector('#text').value=currentValue;">7</button>
+<button class="button" id="" onclick="currentValue+='8'; document.querySelector('#text').value=currentValue;">8</button>
+<button class="button" id="" onclick="currentValue+='9'; document.querySelector('#text').value=currentValue;">9</button>
+<button class="button" id="" onclick="currentValue+='/'; document.querySelector('#text').value=currentValue;">/</button>
+<button class="button" id="" onclick="currentValue=Math.floor(currentValue/10); document.querySelector('#text').value=currentValue;"
+style="width:70px">Del</button>
+
+<button class="button" id="" 
+onclick="let result=eval(currentValue); document.querySelector('#text').value=result">=</button>
+
+</div>
+<script>// let currentValue="";// document.querySelector('#text').value=currentValue;</script>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

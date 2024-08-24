@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison</title>
+</head>
+<body>
+    <input type="number" style="height: 20px; width:100px;" id="input"><br><br>
+    <div id="in"></div>
+    <input type="button" value="Age" onclick="Age(34);">
+</body>
+<script>
+// let age=20;
+function Age(age)
+{
+    if(age>=18 && age<=65)
+{
+console.log("you are able to vote...")
+}
+else{
+console.log("you are not able to vote....")
+}
+}
+console.log(Age(34));
+console.log(Age(12));
+
+</script>
+</html>

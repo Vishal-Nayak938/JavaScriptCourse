@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+
+<style>
+button{
+    background-color: black;
+    color:white;
+    height:30px;
+    width: 150px;
+    font-size:20px;
+    border-radius: 10px;
+    margin-left:100px;
+    margin-top:120px;
+}
+#p{
+    color:coral;
+    font-size: 30px;
+}
+</style>
+
+</head>
+<body>
+
+<p id="p">here you will see the cart</p>
+<button
+onclick="document.querySelector('#p').innerHTML=`you current value is ${cv++}`"
+>increase_by_1</button>
+
+<button onclick="document.querySelector('#p').innerHTML=`your current  value is ${cv-=1}`">
+    decrease_by_1
+</button>
+
+
+    <script>
+
+let cv='0';
+
+function inc()
+{
+    cv++;
+}
+
+
+    </script>
+</body>
+</html>
