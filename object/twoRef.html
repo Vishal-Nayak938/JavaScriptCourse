@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoRef</title>
+</head>
+<body>
+    <script>
+let phone={
+    screen:"A4",
+    RAM:4,
+    Storage:32,
+}
+let phone2={
+    screen:"A4",
+    RAM:4,
+    Storage:32,
+}
+console.log(phone.screen)
+localStorage.setItem("RAM","4");
+localStorage.setItem("screen","A4");
+localStorage.setItem("phone",JSON.stringify(phone))
+let value=JSON.parse(localStorage.getItem("phone"))
+console.log(value)
+localStorage.removeItem("RAM")
+console.log(localStorage.key(1))//1 is index
+console.log(localStorage.key(7))
+    </script>
+</body>
+</html>

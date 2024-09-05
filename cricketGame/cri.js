@@ -39,16 +39,15 @@ function Stump()
     let num=Math.random()*3;
     if(num>=0 && num<=1)
     {
-        document.querySelector('#H').innerText=`${document.querySelector('#Input').innerText="vishal"} is playing computer choice is Bat .you have won.  ` 
+        document.querySelector('#H').innerText=`computer choice is Bat .you have won.  ` 
     }
     else if(num>1 && num<=2)
     {
-        document.querySelector('#H').innerText=` ${document.querySelector('#Input').innerText="vishal"}
-        is playing.computer choice is ball. computer has won.`
+        document.querySelector('#H').innerText=`computer choice is ball. computer has won.`
     }
 else if(num>2 && num<=3)
 {
-    document.querySelector('#H').innerText=`${document.querySelector('#Input').innerText="vishal"} is playing computer choice is stump . it is foul.`
+    document.querySelector('#H').innerText=`computer choice is stump . it is foul.`
 }
 }
 
